@@ -11,6 +11,8 @@ A structured orchestrator pattern where Claude Code and Codex collaborate on rea
 
 Most "multi-agent" setups are glorified round-robin chat. hermes-flow enforces **roles**, **handoff contracts**, and **artifact outputs** so you get a reviewable paper trail, not a conversation history.
 
+> 💡 **Origin**: This architecture was proposed by **Codex** during a cross-AI collaboration session — the orchestrator pattern, blind-review design, and artifact contract. Claude Code generated the implementation files. See [`docs/origin.md`](docs/origin.md) for the session log.
+
 | | hermes-flow | Generic multi-agent chat | Claude Code solo |
 |---|---|---|---|
 | Auditable decision log | ✅ | ❌ | ❌ |
@@ -56,13 +58,11 @@ Spec ──▶ [subtask-1 → Agent A]
 ## 5-Minute Quickstart
 
 ### Prerequisites
-- [Claude Code](https://claude.ai/code) — requires an Anthropic API key or Claude Pro subscription
-- [Codex CLI](https://github.com/openai/codex) — requires an OpenAI API key or Codex Pro subscription
+- [Claude Code](https://claude.ai/code) installed and authenticated
+- [Codex CLI](https://github.com/openai/codex) installed (`codex --version` works)
 - A git repo to work in
 
-> hermes-flow orchestrates two paid AI agents. If you only have access to one, the
-> [tech-decision](workflows/tech-decision.md) and [parallel-build](workflows/parallel-build.md)
-> workflows can still add value with a single agent — just skip the agent you don't have.
+> ⚠️ **Both tools require paid access**: Claude Code needs a [Claude Pro or Team subscription](https://claude.ai) (or Anthropic API key). Codex CLI needs an [OpenAI API key with billing enabled](https://platform.openai.com/settings/organization/billing) or a Codex Pro subscription. Make sure billing is set up on both before starting.
 
 ### Run your first code-review workflow
 
