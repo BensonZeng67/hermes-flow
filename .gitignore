@@ -1,0 +1,17 @@
+# hermes-flow — generated artifacts (not committed)
+artifacts/
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Editor
+.vscode/
+.idea/
+*.sublime-*
+
+# Temp
+*.log
+*.tmp
