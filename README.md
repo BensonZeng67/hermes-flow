@@ -56,9 +56,13 @@ Spec ──▶ [subtask-1 → Agent A]
 ## 5-Minute Quickstart
 
 ### Prerequisites
-- [Claude Code](https://claude.ai/code) installed and authenticated
-- [Codex CLI](https://github.com/openai/codex) installed (`codex --version` works)
+- [Claude Code](https://claude.ai/code) — requires an Anthropic API key or Claude Pro subscription
+- [Codex CLI](https://github.com/openai/codex) — requires an OpenAI API key or Codex Pro subscription
 - A git repo to work in
+
+> hermes-flow orchestrates two paid AI agents. If you only have access to one, the
+> [tech-decision](workflows/tech-decision.md) and [parallel-build](workflows/parallel-build.md)
+> workflows can still add value with a single agent — just skip the agent you don't have.
 
 ### Run your first code-review workflow
 

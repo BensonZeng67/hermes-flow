@@ -5,6 +5,12 @@
 
 ---
 
+## Prerequisites
+
+- **Claude Code** — Anthropic API key or Claude Pro subscription required
+- **Codex CLI** — OpenAI API key or Codex Pro subscription required
+- Both agents installed and authenticated before starting
+
 ## Role Definitions
 
 | Role | Agent | Responsibility |
